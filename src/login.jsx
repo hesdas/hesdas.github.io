@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { createBrowserHistory } from "history";
 
-import ReactDOM from "react-dom/client";
 import {
   Form,
   redirect,
   Link,
-  useActionData,
-  useNavigate,
-  useLocation,
-  Navigate,
+
 } from "react-router-dom";
 
 export async function action({ request, params }) {
@@ -74,8 +70,8 @@ export default function Login() {
 
   return (
     <>
-      <section className="flex flex-col md:flex-row h-scree items-center">
-        <div className=" hidden lg:block h-full max-h-[750px] overflow-hidden md:w-1/2 xl:w-2/3 ">
+      <section className="h-screen w-full flex flex-col md:flex-row  items-center">
+        <div className=" hidden lg:flex h-screen max-h-[750px] overflow-hidden md:w-1/2 xl:w-2/3  items-center ">
           <img
             src="https://source.unsplash.com/random"
             alt=""
@@ -85,9 +81,9 @@ export default function Login() {
         </div>
         <div
           className=" w-full md:max-w-md lg:max-w-full md:mx-auto md:mx-0 md:w-1/2 xl:w-1/3 h-full px-6 lg:px-16 xl:px-12
-  flex items-center justify-center"
+          flex items-center justify-center"
         >
-          <div className="w-full h-100">
+          <div className="w-full  flex items-center justify-center flex-col">
             <h1 className="text-xl md:text-2xl font-bold leading-tight mt-12">
               Log in to your account
             </h1>

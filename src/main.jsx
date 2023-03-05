@@ -39,16 +39,7 @@ const router = createBrowserRouter([
             element: <MemberInfo />,
             loader: memberInfoLoader,
           },
-          // {
-          //   path: "contacts/:contactId/edit",
-          //   element: <EditContact />,
-          //   loader: contactLoader,
-          //   action: editAction,
-          // },
-          // {
-          //   path: "contacts/:contactId/destroy",
-          //   action: destroyAction,
-          // },
+
         ],
       },
     ],

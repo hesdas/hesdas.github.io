@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import { Button } from "flowbite-react";
 import { Form, redirect } from "react-router-dom";
 
@@ -73,9 +72,6 @@ export default function CreateMember() {
                 name="name"
                 required
               />
-              {/* <p className="text-red-500 text-xs italic">
-                Please fill out this field.
-              </p> */}
             </div>
             <div className="w-full md:w-1/2 px-3">
               <label

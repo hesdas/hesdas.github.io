@@ -1,13 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import {
-  Form,
-  redirect,
-  Link,
-  useLoaderData,
-  useNavigate,
-} from "react-router-dom";
-import { TextInput, Label } from "flowbite-react";
+import { Form, useLoaderData } from "react-router-dom";
 export async function loader({ request, params }) {
   let url = `http://127.0.0.1:8000/members/me`;
   let getMemberInfo = new Request(url, {

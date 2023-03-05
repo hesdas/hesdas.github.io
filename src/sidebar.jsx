@@ -1,15 +1,5 @@
-import {
-  Outlet,
-  Link,
-  useLoaderData,
-  Form,
-  redirect,
-  NavLink,
-  useNavigation,
-  useSubmit,
-} from "react-router-dom";
-import { useEffect, useState } from "react";
-import background from "./assets/bgdark.jpg";
+import { Outlet, Link, useNavigation } from "react-router-dom";
+
 const Sidebar = () => {
   const navigation = useNavigation();
   return (
@@ -264,7 +254,9 @@ const Sidebar = () => {
             <div
               id="detail"
               className={
-                navigation.state === "loading" ? "loading  w-full" : "w-full"
+                navigation.state === "loading"
+                  ? "loading  w-full h-screen"
+                  : "w-full h-screen"
               }
             >
               <Outlet />
