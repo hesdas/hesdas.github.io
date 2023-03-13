@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, useLoaderData } from "react-router-dom";
 export async function loader({ request, params }) {
-  let url = `http://127.0.0.1:8000/members/me`;
+  let url = `https://ford-amd.onrender.com/members/me`;
   let getMemberInfo = new Request(url, {
     method: "get",
     credentials: "include",

@@ -3,7 +3,7 @@ import { Button } from "flowbite-react";
 import { Form, redirect } from "react-router-dom";
 
 export async function action({ request, params }) {
-  let url = `http://127.0.0.1:8000/members`;
+  let url = `https://ford-amd.onrender.com/members`;
   const formData = await request.formData();
   let formRequest = new Request(url, {
     method: "post",
