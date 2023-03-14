@@ -65,13 +65,12 @@ export default function Login() {
 
   return (
     <>
-      <section className="h-screen w-full flex flex-col md:flex-row  items-center">
-        <div className=" hidden lg:flex h-screen max-h-[750px] overflow-hidden md:w-1/2 xl:w-2/3  items-center ">
+      <section className="h-full w-full flex flex-col md:flex-row  items-center">
+        <div className=" hidden lg:flex h-full  overflow-hidden md:w-1/2 xl:w-2/3  items-center ">
           <img
             src="https://source.unsplash.com/random"
             alt=""
-            className="mx-auto w-3/4"
-            //max-width: 100%;
+            className="mx-auto  h-3/4 object-scale-down"
           />
         </div>
         <div
