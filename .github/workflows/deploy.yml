@@ -32,7 +32,7 @@ jobs:
           aws-region: ap-northeast-3
 
       - name: Deploy to S3 bucket
-        run: aws s3 sync ./dist/ s3://dev-tambola --delete
+        run: aws s3 sync ./dist/ s3://fordserver-front --delete
 
       # # Popular action to deploy to GitHub Pages:
       # # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
